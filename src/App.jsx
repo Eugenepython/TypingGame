@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
-  const timeTarget = 20
+  const timeTarget = 30
   const [sentence, setSentence] = useState('');
   const [gameRunning, setGameRunning] = useState(false);
   const [text, setText] = useState('');
