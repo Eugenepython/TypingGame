@@ -14,15 +14,11 @@ function App() {
 
   const fetchRandomQuote = () => {
     if (gameRunning && time >=timeTarget) {
-      fetch('https://labs.bible.org/api/?passage=random')
+      fetch('https://labs.bible.org/api/?passage=random&type=json')
         .then((response) => response.json())
         .then((data) => {
-          const words = data.content.split(' ');
-          if (words.length > 20) {
-            setSentence(data.content);
-          } else {
-            fetchRandomQuote();
-          }
+          console.log(data[0].text)
+            setSentence(data[0].text);
         });
     }
   };
