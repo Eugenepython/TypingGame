@@ -14,7 +14,7 @@ function App() {
 
   const fetchRandomQuote = () => {
     if (gameRunning && time >=timeTarget) {
-      fetch('http://api.quotable.io/random')
+      fetch('https://api.quotable.io/random')
         .then((response) => response.json())
         .then((data) => {
           const words = data.content.split(' ');
