@@ -14,7 +14,8 @@ function App() {
 
   const fetchRandomQuote = () => {
     if (gameRunning && time >=timeTarget) {
-      fetch('https://labs.bible.org/api/?passage=random')
+      fetch('https://labs.bible.org/api/?passage=random&type=json')
+      
         .then((response) => response.json())
         .then((data) => {
           const words = data.content.split(' ');
