@@ -14,6 +14,11 @@ code {
 
 .typingArea{
   width : 90%;
-  height : 180px;
-  font-size: 20px;
+  min-height : 40px;
+  
+  font-size: 19px;
+}
+
+.heading {
+  margin: 5px;
 }

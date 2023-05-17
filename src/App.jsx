@@ -71,7 +71,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Text a Bible verse</h1>
+        <h1 className = 'heading'>Text a Bible verse</h1>
         <div className="sentenceBox">{sentence}</div>
 
         <p>Type the verse as accurately as you can</p>
