@@ -14,9 +14,7 @@ code {
 
 .typingArea{
   width : 90%;
-
-  height: auto;
-  
+  height: 100px;
   font-size: 19px;
 }
 
