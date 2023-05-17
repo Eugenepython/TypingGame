@@ -71,9 +71,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Text a Bible verse</h1>
         <div className="sentenceBox">{sentence}</div>
 
-        <p>Type the paragraph above as fast as you can!</p>
+        <p>Type the verse as accurately as you can</p>
         <button className = 'btn' disabled={disableStart} onClick={startUp}>Start a Game</button>
 
         <textarea
